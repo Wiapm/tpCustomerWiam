@@ -1,5 +1,6 @@
-fr\laarabi\tpcustomerwiam\Customer.class
+fr\laarabi\tpcustomerwiam\service\CustomerManager.class
 fr\laarabi\tpcustomerwiam\MicroMarket.class
 fr\laarabi\tpcustomerwiam\resources\JakartaEE10Resource.class
 fr\laarabi\tpcustomerwiam\Discount.class
 fr\laarabi\tpcustomerwiam\JakartaRestConfiguration.class
+fr\laarabi\tpcustomerwiam\Customer.class
