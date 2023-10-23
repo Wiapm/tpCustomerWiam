@@ -18,7 +18,8 @@ import java.util.List;
  */
 @RequestScoped
 public class CustomerManager {
-    
+    @PersistenceContext(unitName = "customerPU")
+    private EntityManager em;
        public List<Customer> getAllCustomers() {
        Query query = em.createNamedQuery("Customer.findAll");
        return query.getResultList();
@@ -29,8 +30,7 @@ public class CustomerManager {
       return null;  
     } 
     
-@PersistenceContext(unitName = "customerPU")
-private EntityManager em;
+
 
 @Transactional
 public void persist(Customer customer) {
