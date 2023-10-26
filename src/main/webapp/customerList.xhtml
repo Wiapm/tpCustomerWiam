@@ -13,8 +13,10 @@
         <title>Liste des clients</title>
     </h:head>
     <h:body>
-        <p:dataTable value="#{customerBean.customers}"
-               var="item">
+       <p:dataTable value="#{customerBean.customers}" var="item"
+                paginator="true" rows="10"
+                rowsPerPageTemplate="2,4,8,10"
+                paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}">
       <p:column>
          <f:facet name="header">
              <h:outputText value="Id"/>
