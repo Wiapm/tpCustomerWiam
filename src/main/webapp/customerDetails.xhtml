@@ -8,7 +8,11 @@
    
     
     
-    
+    <f:metadata>
+   <f:viewParam name="idCustomer" value="#{customerDetailsBean.idCustomer}"
+                required="true"/>
+   <f:viewAction action="#{customerDetailsBean.loadCustomer}"/>
+</f:metadata>
      <h:head>
         
         <title>Liste des clients</title>
