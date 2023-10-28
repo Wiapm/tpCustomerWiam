@@ -31,4 +31,6 @@ public class DiscountManager {
     public void persist(Discount discount) {
         em.persist(discount);
     }
+    
+
 }

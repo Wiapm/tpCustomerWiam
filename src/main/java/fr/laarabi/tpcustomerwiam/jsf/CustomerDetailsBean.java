@@ -5,11 +5,14 @@
 package fr.laarabi.tpcustomerwiam.jsf;
 
 import fr.laarabi.tpcustomerwiam.Customer;
+import fr.laarabi.tpcustomerwiam.Discount;
 import fr.laarabi.tpcustomerwiam.service.CustomerManager;
+import fr.laarabi.tpcustomerwiam.service.DiscountManager;
 import java.io.Serializable;
 import jakarta.inject.Inject;
 import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Named;
+import java.util.List;
 
 /**
  *
@@ -60,4 +63,19 @@ public class CustomerDetailsBean implements Serializable {
   public void loadCustomer() {
     this.customer = customerManager.findById(idCustomer);
   }
+  
+    /**
+   * Retourne la liste de tous les Discount.
+   */
+  
+  
+  @Inject  
+private DiscountManager discountManager;
+     
+    public CustomerDetailsBean() {}
+    
+  public List<Discount> getDiscounts() {
+    return discountManager.getAllDiscounts();
+  }
+  
 }
