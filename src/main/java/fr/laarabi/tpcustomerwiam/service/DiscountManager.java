@@ -4,7 +4,7 @@
  */
 package fr.laarabi.tpcustomerwiam.service;
 
-import fr.laarabi.tpcustomerwiam.Discount;
+import fr.laarabi.tpcustomerwiam.entities.Discount;
 import java.util.List;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.persistence.EntityManager;

@@ -4,7 +4,7 @@
  */
 package fr.laarabi.tpcustomerwiam.service;
 
-import fr.laarabi.tpcustomerwiam.Customer;
+import fr.laarabi.tpcustomerwiam.entities.Customer;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;

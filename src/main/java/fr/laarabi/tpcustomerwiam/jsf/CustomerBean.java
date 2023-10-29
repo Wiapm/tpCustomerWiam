@@ -4,7 +4,7 @@
  */
 package fr.laarabi.tpcustomerwiam.jsf;
 
-import fr.laarabi.tpcustomerwiam.Customer;
+import fr.laarabi.tpcustomerwiam.entities.Customer;
 import fr.laarabi.tpcustomerwiam.service.CustomerManager;
 import jakarta.inject.Named;
 import jakarta.faces.view.ViewScoped;

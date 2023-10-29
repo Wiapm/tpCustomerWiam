@@ -4,8 +4,8 @@
  */
 package fr.laarabi.tpcustomerwiam.jsf;
 
-import fr.laarabi.tpcustomerwiam.Customer;
-import fr.laarabi.tpcustomerwiam.Discount;
+import fr.laarabi.tpcustomerwiam.entities.Customer;
+import fr.laarabi.tpcustomerwiam.entities.Discount;
 import fr.laarabi.tpcustomerwiam.service.CustomerManager;
 import fr.laarabi.tpcustomerwiam.service.DiscountManager;
 import java.io.Serializable;
