@@ -1,85 +1,85 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-  
+
       xmlns:p="http://primefaces.org/ui" 
       xmlns:h="jakarta.faces.html"
       xmlns:f="jakarta.faces.core">
-   
-    
-    
+
+
+
     <f:metadata>
-   <f:viewParam name="idCustomer" value="#{customerDetailsBean.idCustomer}"
-                required="true"/>
-   <f:viewAction action="#{customerDetailsBean.loadCustomer}"/>
-</f:metadata>
-     <h:head>
-        
+        <f:viewParam name="idCustomer" value="#{customerDetailsBean.idCustomer}"
+                     required="true"/>
+        <f:viewAction action="#{customerDetailsBean.loadCustomer}"/>
+    </f:metadata>
+    <h:head>
+
         <title>Liste des clients</title>
     </h:head>
     <h:body>
-      <h:form>
-   <h1><h:outputText value="Create/Edit"/></h1>
-   <h:panelGrid columns="2">
-      <h:outputLabel value="CustomerId:" for="customerId" />
-      <h:inputText id="customerId" 
-                   value="#{customerDetailsBean.customer.customerId}" 
-                   title="CustomerId" 
-                   required="true" requiredMessage="The CustomerId field is required."/>
-      <h:outputLabel value="Name:" for="name" />
-      <h:inputText id="name" 
-                   value="#{customerDetailsBean.customer.name}" 
-                   title="Name" />
-      <h:outputLabel value="Addressline1:" for="addressline1" />
-      <h:inputText id="addressline1" 
-                   value="#{customerDetailsBean.customer.addressline1}" 
-                   title="Addressline1" />
-      <h:outputLabel value="Addressline2:" for="addressline2" />
-      <h:inputText id="addressline2" 
-                   value="#{customerDetailsBean.customer.addressline2}" 
-                   title="Addressline2" />
-      <h:outputLabel value="City:" for="city" />
-      <h:inputText id="city" 
-                   value="#{customerDetailsBean.customer.city}" 
-                   title="City" />
-      <h:outputLabel value="State:" for="state" />
-      <h:inputText id="state" 
-                   value="#{customerDetailsBean.customer.state}" 
-                   title="State" />
-      <h:outputLabel value="Phone:" for="phone" />
-      <h:inputText id="phone" 
-                   value="#{customerDetailsBean.customer.phone}" 
-                   title="Phone" />
-      <h:outputLabel value="Fax:" for="fax" />
-      <h:inputText id="fax" 
-                   value="#{customerDetailsBean.customer.fax}" 
-                   title="Fax" />
-      <h:outputLabel value="Email:" for="email" />
-      <h:inputText id="email" 
-                   value="#{customerDetailsBean.customer.email}" 
-                   title="Email" />
-      <h:outputLabel value="CreditLimit:" for="creditLimit" />
-      <h:inputText id="creditLimit" 
-                   value="#{customerDetailsBean.customer.creditLimit}" 
-                   title="CreditLimit" />
-      <h:outputLabel value="Discount:" for="discount" />
-      <h:selectOneMenu id="discount" 
-                       value="#{customerDetailsBean.customer.discountCode}" 
-                       title="Discount" 
-                       required="true" requiredMessage="The Discount field is required.">
-         <!-- TODO: update below reference to list of available items-->
-         <f:selectItems value="#{fixme}"/>
-      </h:selectOneMenu>
-      <h:outputLabel value="Zip:" for="zip" />
-      <h:selectOneMenu id="zip" 
-                       value="#{customerDetailsBean.customer.zip}" 
-                       title="Zip" 
-                       required="true" requiredMessage="The Zip field is required.">
-         <!-- TODO: update below reference to list of available items-->
-         <f:selectItems value="#{fixme}"/>
-      </h:selectOneMenu>
-   </h:panelGrid>
-</h:form>
+        <h:form>
+            <h1><h:outputText value="Create/Edit"/></h1>
+            <h:panelGrid columns="2">
+                <h:outputLabel value="CustomerId:" for="customerId" />
+                <h:inputText id="customerId" 
+                             value="#{customerDetailsBean.customer.customerId}" 
+                             title="CustomerId" 
+                             required="true" requiredMessage="The CustomerId field is required."/>
+                <h:outputLabel value="Name:" for="name" />
+                <h:inputText id="name" 
+                             value="#{customerDetailsBean.customer.name}" 
+                             title="Name" />
+                <h:outputLabel value="Addressline1:" for="addressline1" />
+                <h:inputText id="addressline1" 
+                             value="#{customerDetailsBean.customer.addressline1}" 
+                             title="Addressline1" />
+                <h:outputLabel value="Addressline2:" for="addressline2" />
+                <h:inputText id="addressline2" 
+                             value="#{customerDetailsBean.customer.addressline2}" 
+                             title="Addressline2" />
+                <h:outputLabel value="City:" for="city" />
+                <h:inputText id="city" 
+                             value="#{customerDetailsBean.customer.city}" 
+                             title="City" />
+                <h:outputLabel value="State:" for="state" />
+                <h:inputText id="state" 
+                             value="#{customerDetailsBean.customer.state}" 
+                             title="State" />
+                <h:outputLabel value="Phone:" for="phone" />
+                <h:inputText id="phone" 
+                             value="#{customerDetailsBean.customer.phone}" 
+                             title="Phone" />
+                <h:outputLabel value="Fax:" for="fax" />
+                <h:inputText id="fax" 
+                             value="#{customerDetailsBean.customer.fax}" 
+                             title="Fax" />
+                <h:outputLabel value="Email:" for="email" />
+                <h:inputText id="email" 
+                             value="#{customerDetailsBean.customer.email}" 
+                             title="Email" />
+                <h:outputLabel value="CreditLimit:" for="creditLimit" />
+                <h:inputText id="creditLimit" 
+                             value="#{customerDetailsBean.customer.creditLimit}" 
+                             title="CreditLimit" />
+                <h:outputLabel value="Discount:" for="discount" />
+                <h:selectOneMenu id="discount" 
+                                 value="#{customerDetailsBean.customer.discountCode}" 
+                                 title="Discount" 
+                                 required="true" requiredMessage="The Discount field is required.">
+                    <!-- TODO: update below reference to list of available items-->
+                    <f:selectItems value="#{fixme}"/>
+                </h:selectOneMenu>
+                <h:outputLabel value="Zip:" for="zip" />
+                <h:selectOneMenu id="zip" 
+                                 value="#{customerDetailsBean.customer.zip}" 
+                                 title="Zip" 
+                                 required="true" requiredMessage="The Zip field is required.">
+                    <!-- TODO: update below reference to list of available items-->
+                    <f:selectItems value="#{fixme}"/>
+                </h:selectOneMenu>
+            </h:panelGrid>
+        </h:form>
     </h:body>
-    
+
 </html>

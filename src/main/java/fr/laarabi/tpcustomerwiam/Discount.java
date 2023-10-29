@@ -95,5 +95,5 @@ public class Discount implements Serializable {
     public String toString() {
         return "fr.laarabi.tpcustomerwiam.Discount[ code=" + code + " ]";
     }
-    
+
 }

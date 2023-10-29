@@ -18,27 +18,27 @@ import java.util.List;
  */
 @RequestScoped
 public class CustomerManager {
+
     @PersistenceContext(unitName = "customerPU")
     private EntityManager em;
-       public List<Customer> getAllCustomers() {
-       Query query = em.createNamedQuery("Customer.findAll");
-       return query.getResultList();
+
+    public List<Customer> getAllCustomers() {
+        Query query = em.createNamedQuery("Customer.findAll");
+        return query.getResultList();
     }
 
-       @Transactional
+    @Transactional
     public Customer update(Customer customer) {
-      return null;  
-    } 
-    
+        return null;
+    }
 
+    @Transactional
+    public void persist(Customer customer) {
+        em.persist(customer);
+    }
 
-@Transactional
-public void persist(Customer customer) {
-  em.persist(customer);
-}
-    
-public Customer findById(int idCustomer) {  
-  return em.find(Customer.class, idCustomer);  
-}
+    public Customer findById(int idCustomer) {
+        return em.find(Customer.class, idCustomer);
+    }
 
 }
