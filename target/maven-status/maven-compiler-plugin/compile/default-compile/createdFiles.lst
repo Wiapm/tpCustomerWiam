@@ -1,10 +1,10 @@
+fr\laarabi\tpcustomerwiam\entities\Discount.class
 fr\laarabi\tpcustomerwiam\service\DiscountManager.class
 fr\laarabi\tpcustomerwiam\jsf\CustomerDetailsBean.class
 fr\laarabi\tpcustomerwiam\service\CustomerManager.class
 fr\laarabi\tpcustomerwiam\jsf\CustomerBean.class
-fr\laarabi\tpcustomerwiam\MicroMarket.class
 fr\laarabi\tpcustomerwiam\resources\JakartaEE10Resource.class
-fr\laarabi\tpcustomerwiam\Discount.class
 fr\laarabi\tpcustomerwiam\JakartaRestConfiguration.class
-fr\laarabi\tpcustomerwiam\Customer.class
+fr\laarabi\tpcustomerwiam\entities\MicroMarket.class
+fr\laarabi\tpcustomerwiam\entities\Customer.class
 fr\laarabi\tpcustomerwiam\config\ConfigJSF.class
