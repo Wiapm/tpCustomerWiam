@@ -70,7 +70,10 @@
                     <!-- TODO: update below reference to list of available items-->
                     <f:selectItems value="#{customerDetailsBean.discounts}" var="discount" itemLabel="#{discount.code} (#{discount.rate}%)"  itemValue="#{discount}"/>
                 </h:selectOneMenu>
-               
+
+                <h:button id="back" value="Revenir à la liste" outcome="customerList"/>
+                <h:commandButton id="update" value="Enregistrer" action="#{customerDetailsBean.update}"/>
+
             </h:panelGrid>
         </h:form>
     </h:body>
