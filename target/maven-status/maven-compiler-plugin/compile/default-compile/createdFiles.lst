@@ -5,6 +5,7 @@ fr\laarabi\tpcustomerwiam\service\CustomerManager.class
 fr\laarabi\tpcustomerwiam\jsf\CustomerBean.class
 fr\laarabi\tpcustomerwiam\resources\JakartaEE10Resource.class
 fr\laarabi\tpcustomerwiam\JakartaRestConfiguration.class
+fr\laarabi\tpcustomerwiam\jsf\DiscountConverter.class
 fr\laarabi\tpcustomerwiam\entities\MicroMarket.class
 fr\laarabi\tpcustomerwiam\entities\Customer.class
 fr\laarabi\tpcustomerwiam\config\ConfigJSF.class
