@@ -21,11 +21,14 @@
         <h:form>
             <h1><h:outputText value="Create/Edit"/></h1>
             <h:panelGrid columns="2">
+
                 <h:outputLabel value="CustomerId:" for="customerId" />
                 <h:inputText id="customerId" 
                              value="#{customerDetailsBean.customer.customerId}" 
                              title="CustomerId" 
                              required="true" requiredMessage="The CustomerId field is required."/>
+
+                <h:outputText value="Aucun client avec l'id #{customerDetailsBean.idCustomer} !" rendered='#{customerDetailsBean.customer == null}'/>
                 <h:outputLabel value="Name:" for="name" />
                 <h:inputText id="name" 
                              value="#{customerDetailsBean.customer.name}" 
